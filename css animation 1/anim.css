@@ -1,0 +1,45 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.grand {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: #1d1d29;
+  border-radius: 20px;
+  transform: translate(64%, 10%);
+  box-shadow: 10px 10px 7px rgba(29, 29, 41, 0.4);
+}
+.grand__btn {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(15%, 15%);
+  animation: tourne 5s 400ms both ease infinite;
+}
+
+@keyframes tourne {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 450px);
+    background-color: aquamarine;
+  }
+  50% {
+    transform: translate(450px, 450px);
+    background-color: chocolate;
+  }
+  75% {
+    transform: translate(450px);
+    background-color: blue;
+  }
+  100% {
+    transform: translate(0);
+    background-color: red;
+  }
+}/*# sourceMappingURL=anim.css.map */
